@@ -130,3 +130,7 @@ textarea{
     transform:translateX(0px);
 
 }
+
+.form-invalid {
+  outline: 1px solid red !important;
+}
