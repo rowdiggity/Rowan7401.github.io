@@ -24,7 +24,7 @@ $message_sent = false;
         }
     }
 ?>
-
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -81,3 +81,4 @@ $message_sent = false;
     endif;
     ?>
    </body>
+   <html>
