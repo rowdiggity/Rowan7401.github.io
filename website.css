@@ -36,6 +36,14 @@ main {
   height: 30rem;
   border: #ffffff 10px;
 }
+.logos3 {
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: auto;
+  border: #ffffff 10px;
+}
 h1 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     align-items: center;
