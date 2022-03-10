@@ -1,0 +1,284 @@
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  }
+
+  
+main {
+    min-height: 100vh;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.avatar {
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25rem;
+    height: auto;
+    border: #ffffff 10px;
+    border-radius: 50%;
+}
+.logos {
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20rem;
+    height: auto;
+    border: #ffffff 10px;
+    border-radius: 50%;
+}
+.logos2 {
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20rem;
+  height: 30rem;
+  border: #ffffff 10px;
+}
+.logos3 {
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: auto;
+  border: #ffffff 10px;
+}
+h1 {
+    display: inline-block;
+    color: #4188eb;
+    font-family: 'Righteous', serif;
+    font-size: 3em; 
+    text-shadow: .06em .06em 0 hsla(230,40%,50%,1);
+    }
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color:#132e53;
+}
+h3 {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  font-weight: bolder;
+  color: #4188eb;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: bold;
+  color:#132e53;
+}
+h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  line-height: 200%;
+  font-weight: bold;
+  color:#132e53;
+}
+h6 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 7rem;
+  font-size: 1.75rem;
+  font-weight: bold;
+  color:#132e53;
+}
+h7 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  margin-left: 3rem;
+  font-size: 1.75rem;
+  font-weight: bold;
+  color:#132e53;
+}
+.dashboard {
+  flex: 1.5;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.accomplishments {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: left;
+  justify-content: center;
+  margin-right: 2rem;
+}
+.photos {
+  flex: 0.5;
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-evenly;
+}
+.box {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 7px;
+  text-align: center;
+}
+.glass {
+  background: white;
+  min-height: 80vh;
+  width: 60%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+}
+.socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.6rem;
+}
+div.polaroid {
+  width: 40%;
+  background-color: white;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 35px;
+  margin-right: 2rem;
+}
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+.btn {
+  background-color: white;
+  margin-right: 1rem;
+  border-radius: 1.25rem;
+  border: none; 
+  color: #4188eb;
+  padding: 10px 14px; 
+  font-size: 30px; 
+  cursor: pointer; 
+}
+
+.btn:hover {
+  background-color: #65dfc9
+}
+
+.navbar {
+  width: 100%;
+  background-color: white;
+  overflow: auto;
+  justify-content: top;
+  border-radius: 2rem;
+}
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: #4188eb;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+.active {
+  background-color: #65dfc9;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+.caption {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4188eb;
+}
+table, th, td {
+  margin: 5%;
+  margin-bottom: 10%;
+  border: 1px solid black;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 200px;
+    }
+    
+    li a {
+      display: block;
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover {
+      background-color: rgb(0, 0, 0);
+      color: white;
+    }
+    .circle1,
+    .circle2 {
+      background: white;
+      background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.3)
+      );
+      height: 20rem;
+      width: 20rem;
+      position: absolute;
+      border-radius: 50%;
+    }
+    
+    .circle1 {
+      top: 5%;
+      right: 15%;
+    }
+    .circle2 {
+      bottom: 5%;
+      left: 10%;
+    }
+  
+ 
