@@ -151,6 +151,32 @@ h7 {
   margin: 7px;
   text-align: center;
 }
+.box2:hover {
+  background: white;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 7px;
+  text-align: center;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
 .glass {
   background: white;
   min-height: 80vh;
@@ -171,17 +197,70 @@ h7 {
   justify-content: center;
   margin-top: 0.6rem;
 }
-div.polaroid {
-  width: 40%;
-  background-color: white;
-  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 35px;
-  margin-right: 2rem;
+.polaroid{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Homemade Apple', cursive;
+  font-size:1.25rem;
+  color:#000;
 }
-div.container {
-  text-align: center;
-  padding: 10px 20px;
+
+li{
+  text-align:center;
+  display:inline-block;
+  list-style:none;
+  position:relative;
+  border:solid 0.5rem #fff;
+  background:#fff;
+  box-shadow:0 0 0.6rem 0px #555;
+  transition:all 1s ease;
+  -o-transition:all 1s ease;
+  -moz-transition:all 1s ease;
+  -webkit-transition:all 1s ease;
+  top:1.5rem;
 }
+
+
+li:hover{
+  top:0px;
+  opacity:0.5;
+}
+
+li:nth-child(1){
+    transform:rotate(10deg);
+}
+
+li:nth-child(2){
+    transform:rotate(0deg);
+}
+
+li:nth-child(3){
+    transform:rotate(-10deg);
+}
+
+li:nth-child(4){
+    transform:rotate(20deg);
+}
+
+p{
+  margin:-0.2rem 0 0 0;
+}
+
+.light{
+  border-radius:50%;
+  position:absolute;
+  left:0;
+  right:0;
+  width:300px;
+  height:100%;
+  background:#fff;
+  filter:blur(100px);
+  opacity:0.3;
+  pointer-events:none;
+}
+
 .btn {
   background-color: white;
   margin-right: 1rem;
@@ -226,7 +305,7 @@ div.container {
     display: block;
   }
 }
-.caption {
+caption {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 2rem;
   font-weight: bold;
@@ -280,5 +359,4 @@ tr:nth-child(even) {
       bottom: 5%;
       left: 10%;
     }
-  
- 
+    
