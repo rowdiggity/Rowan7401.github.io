@@ -21,7 +21,6 @@ main {
     margin-right: auto;
     width: 20rem;
     height: auto;
-    border: #ffffff 10px;
     border-radius: 50%;
 }
 .logos {
@@ -47,6 +46,14 @@ main {
   margin-right: auto;
   width: auto;
   height: auto;
+  border: #ffffff 10px;
+}
+.logos3 {
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20rem;
+  height: 15rem;
   border: #ffffff 10px;
 }
 h1 {
@@ -123,6 +130,10 @@ h7 {
   align-items: center;
   justify-content: space-evenly;
 }
+.photostack {
+  display: flex;
+  flex-direction: column;
+}
 .accomplishments {
   display: flex;
   flex: 1;
@@ -131,15 +142,7 @@ h7 {
   justify-content: center;
   margin-right: 2rem;
 }
-.photos {
-  flex: 0.5;
-  margin-top: 1.5rem;
-  margin-right: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: space-evenly;
-}
+
 .box {
   background: white;
   display: flex;
@@ -158,6 +161,18 @@ h7 {
   display: flex;
   flex-direction: column;
   width: 30rem;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 7px;
+  text-align: center;
+}
+.box3 {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  width: 55rem;
+  height: auto;
   border: none;
   border-radius: 5px;
   padding: 10px;
@@ -197,7 +212,16 @@ h7 {
   justify-content: center;
   margin-top: 0.6rem;
 }
-.polaroid{
+.polaroid1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Homemade Apple', cursive;
+  font-size:1.25rem;
+  color:#000;
+}
+.polaroid2 {
   display: flex;
   flex-direction: row;
   align-items: center;
