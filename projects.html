@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rowan's Website</title>
+    <link rel="stylesheet" href="./wave.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <main>
+        <section class="glass">
+            <div class="navbar">
+                <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+                <a href="courses.html"><i class="fa fa-book" aria-hidden="true"></i> Courses</a>
+                <a href="accomplisments.html"><i class="fa fa-trophy" aria-hidden="true"></i> Accomplishments</a>
+                <a class="active" href="projects.html"><i class="fa fa-file-code-o" aria-hidden="true"></i> Projects</a>
+                <a href="work.html"><i class="fa fa-briefcase" aria-hidden="true"></i> Work Experience</a>
+                <a href="service.html"><i class="fa fa-child" aria-hidden="true"></i> Community Service</a>
+                <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+                <a href="photos.html"><i class="fa fa-camera" aria-hidden="true"></i> Photos</a>
+            </div>
+            <div class="dashboard">
+                <div class="accomplishments">
+                    <h8>Spotistatify: Spotify Web API Quiz App</h8>
+                    <h2>Click to play:</h2>
+                    <div class="gameButton">
+                        <a href="https://rowan7401.github.io/Spotify-Web-Api-Quiz-App/">
+                            <button class="btn"><i class="fa fa-gamepad" aria-hidden="true"></i></button></a>
+                    </div>
+                </div>
+                
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="images/artist_image.JPG" style="width:100%">
+                        <div class="numbertext">1 / 4</div>
+                        <div class="text">Game mode landing page</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img src="images/HS_correct_popup.JPG" style="width:100%">
+                        <div class="numbertext">2 / 4</div>
+                        <div class="text">Popup of Hot Streak gamemode</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img src="images/mc_page.JPG" style="width:100%">
+                        <div class="numbertext">3 / 4</div>
+                        <div class="text">Multiple choice question</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/homepage.JPG" style="width:100%">
+                        <div class="numbertext">4 / 4</div>
+                        <div class="text">Home landing page of app</div>
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    </div>
+                    
+                    <script>
+                    let slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                    }
+                    
+                    function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {slideIndex = 1}    
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";  
+                    dots[slideIndex-1].className += " active";
+                    }
+                    </script>
+                    <div class="gameBox">
+                        <h4>A project I completed over Summer 2022. The goal was to create a fun and easy to use
+                            app that allows users to quiz themselves on their favorite artists' statistics that
+                            are within the Spotify free API endpoints. 
+                        </h4>
+                    </div>
+                </div>
+            
+        </section>
+    </main>
+</body>
