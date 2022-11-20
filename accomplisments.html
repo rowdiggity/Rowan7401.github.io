@@ -1,75 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rowan's Website</title>
-    <link rel="stylesheet" href="./wave.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
-    <main>
-    <section class = "glass"> 
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rowan's Website</title>
+  <link rel="stylesheet" href="./wave.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <main>
+    <section class="glass">
+      <script>
+        setTimeout(() => {  loaded() }, 1500);
+        async function loaded() {
+          document.getElementsByClassName("navs")[0].classList.add("loaded");
+          document.getElementsByClassName("navs")[1].classList.add("loaded");
+          document.getElementsByClassName("navs")[2].classList.add("loaded");
+          document.getElementsByClassName("navs")[3].classList.add("loaded");
+          document.getElementsByClassName("navs")[4].classList.add("loaded");
+          document.getElementsByClassName("navs")[5].classList.add("loaded");
+          document.getElementsByClassName("navs")[6].classList.add("loaded");
+        }
+          
+      </script>
       <div class="navbar">
-        <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
-        <a href="courses.html"><i class="fa fa-book" aria-hidden="true"></i> Courses</a>
-        <a class="active" href="accomplisments.html"><i class="fa fa-trophy" aria-hidden="true"></i> Accomplishments</a>
-        <a href="projects.html"><i class="fa fa-file-code-o" aria-hidden="true"></i> Projects</a>
-        <a href="work.html"><i class="fa fa-briefcase" aria-hidden="true"></i> Work Experience</a>
-        <a href="service.html"><i class="fa fa-child" aria-hidden="true"></i> Community Service</a>
-        <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
-        <a href="photos.html"><i class="fa fa-camera" aria-hidden="true"></i> Photos</a>
+        <a class="navs" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a class="navs" href="courses.html"><i class="fa fa-book" aria-hidden="true"></i> Courses</a>
+        <a class="navs selected" href="accomplisments.html"><i class="fa fa-trophy" aria-hidden="true"></i> Accomplishments</a>
+        <a class="navs" href="projects.html"><i class="fa fa-file-code-o" aria-hidden="true"></i> Projects</a>
+        <a class="navs" href="work.html"><i class="fa fa-briefcase" aria-hidden="true"></i> Work Experience</a>
+        <a class="navs" href="service.html"><i class="fa fa-child" aria-hidden="true"></i> Community Service</a>
+        <a class="navs" href="photos.html"><i class="fa fa-camera" aria-hidden="true"></i> Photos</a>
       </div>
       <div class="dashboard">
         <h1>My Resume:</h1>
         <a href="./images/Rowan Dillon's Resume.docx" download><button class="btn">Download</button></a>
-       </form>
+        </form>
       </div>
       <h3>Villanova Leadership Program Certificate (VLP) 2022</h3>
       <div class="accomplishments">
         <img src="./images/vlp.jpg" alt="logos" class="logos">
         <img src="./images/free throw.png" alt="logos" class="logos">
       </div>
-      <div class="box3">        
-        <h5>The Villanova Leadership Program is a club hosted by two Villanova faculty, Jack Sherwood and Steve Koch, who are passionate
-          about educating Villanova students about leadership and community. Throughout the semester, 6 leadership seminars are hosted by
-        Jack and Steve with featured guest speakers. VLP members must attend and participate in 4 of 6 sessions to recieve the certificate.
-        Each session highlights a different key component of strong leadership. Students are also encouraged network at sessions or 
-        to participate in community builder activties outside of the sessions. Above, there is a photo of me and the other winners of the 
-        free throw community builder contest. Also, above there is a photo of me at the VLP end of year dinner.
-        <h5>
+      <div class="box3">
+        <h5>The Villanova Leadership Program is a club hosted by two Villanova faculty, Jack Sherwood and Steve Koch,
+          who are passionate
+          about educating Villanova students about leadership and community. Throughout the semester, 6 leadership
+          seminars are hosted by
+          Jack and Steve with featured guest speakers. VLP members must attend and participate in 4 of 6 sessions to
+          recieve the certificate.
+          Each session highlights a different key component of strong leadership. Students are also encouraged network
+          at sessions or
+          to participate in community builder activties outside of the sessions. Above, there is a photo of me and the
+          other winners of the
+          free throw community builder contest. Also, above there is a photo of me at the VLP end of year dinner.
+          <h5>
       </div>
       <h3>Tutta Bella Scholar Athlete 2020</h3>
       <div class="accomplishments">
         <img src="./images/Tutta-Bella-Logo-2014.jpg" alt="logos" class="logos">
-        <div class="box">        
-          <h4>The <a href="https://ihsboosters.org/Page/Recognition/Tutta%20bella%202019-2020%20Winners">Tutta Bella Scholar Athlete</a>
-            award is given to high school athletes who demonstrate excellence both on and off the court. Coaches are asked to choose one player 
-            from their team that is both dedicated to their studies, their sport, and their community. I was one of the 5 scholar athletes 
+        <div class="box">
+          <h4>The <a href="https://ihsboosters.org/Page/Recognition/Tutta%20bella%202019-2020%20Winners">Tutta Bella
+              Scholar Athlete</a>
+            award is given to high school athletes who demonstrate excellence both on and off the court. Coaches are
+            asked to choose one player
+            from their team that is both dedicated to their studies, their sport, and their community. I was one of the
+            5 scholar athletes
             selected during the Winter season. The website linked contains more information on why I was chosen. </h4>
         </div>
       </div>
       <h3>National Spanish Examination Bronze Medal Recipient 2019</h3>
       <div class="accomplishments">
         <img src="./images/spanish.jpg" alt="logos" class="logos">
-        <div class="box">        
-          <h5>The National Spanish Examination is an online exam where students are asked a variety of 
+        <div class="box">
+          <h5>The National Spanish Examination is an online exam where students are asked a variety of
             questions to test their proficiency in Spanish. The exam requires students to be both strong readers
-          and listeners of Spanish as audio clips of Native speakers and Spanish articles are the basis of the test questions. 
-          I was awarded the bronze medal placing me in the top 10% of 160,000+ students. </h5>
+            and listeners of Spanish as audio clips of Native speakers and Spanish articles are the basis of the test
+            questions.
+            I was awarded the bronze medal placing me in the top 10% of 160,000+ students. </h5>
         </div>
       </div>
       <h3>Issaquah “School Pool” Logo Design Contest Winner 2018</h3>
       <div class="accomplishments">
         <img src="./images/school pool.jpg" alt="logos" class="logos2">
-        <div class="box">        
+        <div class="box">
           <h5>The Issaquah "School Pool" logo design contest was a competition put on by the
             Issaquah Parks and Recreation Department. Parks and Rec representatives tasked the Graphic Design II
-          classes at Issaquah High to create a logo in Adobe Illustrator that would encourage students and parents to carpool
-          or take other modes of transportation besides cars to reduce traffic. I presented my logo to the representatives
-        and they chose mine to be displayed in various advertisements. An example is the the electrical box pictured to the left.</h5>
+            classes at Issaquah High to create a logo in Adobe Illustrator that would encourage students and parents to
+            carpool
+            or take other modes of transportation besides cars to reduce traffic. I presented my logo to the
+            representatives
+            and they chose mine to be displayed in various advertisements. An example is the the electrical box pictured
+            to the left.</h5>
         </div>
       </div>
     </section>
-    </main>
-   </body>
+  </main>
+</body>

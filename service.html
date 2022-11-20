@@ -10,15 +10,27 @@
   <body>
     <main>
     <section class = "glass"> 
+      <script>
+        setTimeout(() => {  loaded() }, 1500);
+        async function loaded() {
+          document.getElementsByClassName("navs")[0].classList.add("loaded");
+          document.getElementsByClassName("navs")[1].classList.add("loaded");
+          document.getElementsByClassName("navs")[2].classList.add("loaded");
+          document.getElementsByClassName("navs")[3].classList.add("loaded");
+          document.getElementsByClassName("navs")[4].classList.add("loaded");
+          document.getElementsByClassName("navs")[5].classList.add("loaded");
+          document.getElementsByClassName("navs")[6].classList.add("loaded");
+        }
+          
+      </script>
       <div class="navbar">
-        <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
-        <a href="courses.html"><i class="fa fa-book" aria-hidden="true"></i> Courses</a>
-        <a href="accomplisments.html"><i class="fa fa-trophy" aria-hidden="true"></i> Accomplishments</a>
-        <a href="projects.html"><i class="fa fa-file-code-o" aria-hidden="true"></i> Projects</a>
-        <a href="work.html"><i class="fa fa-briefcase" aria-hidden="true"></i> Work Experience</a>
-        <a class="active" href="service.html"><i class="fa fa-child" aria-hidden="true"></i> Community Service</a>
-        <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
-        <a href="photos.html"><i class="fa fa-camera" aria-hidden="true"></i> Photos</a>
+        <a class="navs" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a class="navs" href="courses.html"><i class="fa fa-book" aria-hidden="true"></i> Courses</a>
+        <a class="navs" href="accomplisments.html"><i class="fa fa-trophy" aria-hidden="true"></i> Accomplishments</a>
+        <a class="navs" href="projects.html"><i class="fa fa-file-code-o" aria-hidden="true"></i> Projects</a>
+        <a class="navs" href="work.html"><i class="fa fa-briefcase" aria-hidden="true"></i> Work Experience</a>
+        <a class="navs selected" href="service.html"><i class="fa fa-child" aria-hidden="true"></i> Community Service</a>
+        <a class="navs" href="photos.html"><i class="fa fa-camera" aria-hidden="true"></i> Photos</a>
       </div>
       <div class="dashboard">
         <h1 data-shadow="My Volunteer Experience">My Volunteer Experience</h1>
