@@ -13,24 +13,24 @@
     <main>
         <section class="glass">
             <script>
-                setTimeout(() => {  loaded() }, 1500);
+                setTimeout(() => { loaded() }, 1500);
                 async function loaded() {
-                  document.getElementsByClassName("navs")[0].classList.add("loaded");
-                  document.getElementsByClassName("navs")[1].classList.add("loaded");
-                  document.getElementsByClassName("navs")[2].classList.add("loaded");
-                  document.getElementsByClassName("navs")[3].classList.add("loaded");
-                  document.getElementsByClassName("navs")[4].classList.add("loaded");
-                  document.getElementsByClassName("navs")[5].classList.add("loaded");
-                  document.getElementsByClassName("navs")[6].classList.add("loaded");
+                    document.getElementsByClassName("navs")[0].classList.add("loaded");
+                    document.getElementsByClassName("navs")[1].classList.add("loaded");
+                    document.getElementsByClassName("navs")[2].classList.add("loaded");
+                    document.getElementsByClassName("navs")[3].classList.add("loaded");
+                    document.getElementsByClassName("navs")[4].classList.add("loaded");
+                    document.getElementsByClassName("navs")[5].classList.add("loaded");
+                    document.getElementsByClassName("navs")[6].classList.add("loaded");
                 }
-                  
-              </script>
+
+            </script>
             <div class="navbar">
                 <a class="navs" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
-                <a class="navs" href="courses.html"><i class="fa fa-book" aria-hidden="true"></i> Courses</a>
-                <a class="navs" href="accomplisments.html"><i class="fa fa-trophy" aria-hidden="true"></i> Accomplishments</a>
-                <a class="navs selected" href="projects.html"><i class="fa fa-file-code-o" aria-hidden="true"></i> Projects</a>
                 <a class="navs" href="work.html"><i class="fa fa-briefcase" aria-hidden="true"></i> Work Experience</a>
+                <a class="navs selected" href="projects.html"><i class="fa fa-file-code-o" aria-hidden="true"></i> Projects</a>
+                <a class="navs" href="accomplisments.html"><i class="fa fa-trophy" aria-hidden="true"></i>Accomplishments</a>
+                <a class="navs" href="courses.html"><i class="fa fa-book" aria-hidden="true"></i> Courses</a>
                 <a class="navs" href="service.html"><i class="fa fa-child" aria-hidden="true"></i> Community Service</a>
                 <a class="navs" href="photos.html"><i class="fa fa-camera" aria-hidden="true"></i> Photos</a>
             </div>
@@ -43,20 +43,20 @@
                             <button class="btn"><i class="fa fa-gamepad" aria-hidden="true"></i></button></a>
                     </div>
                 </div>
-                
+
                 <div class="slideshow-container">
                     <div class="mySlides fade">
                         <img src="images/artist_image.JPG" style="width:100%">
                         <div class="numbertext">1 / 4</div>
                         <div class="text">Game mode landing page</div>
                     </div>
-                    
+
                     <div class="mySlides fade">
                         <img src="images/HS_correct_popup.JPG" style="width:100%">
                         <div class="numbertext">2 / 4</div>
                         <div class="text">Popup of Hot Streak gamemode</div>
                     </div>
-                    
+
                     <div class="mySlides fade">
                         <img src="images/mc_page.JPG" style="width:100%">
                         <div class="numbertext">3 / 4</div>
@@ -68,56 +68,56 @@
                         <div class="numbertext">4 / 4</div>
                         <div class="text">Home landing page of app</div>
                     </div>
-                    
+
                     <a class="prev" onclick="plusSlides(-1)">❮</a>
                     <a class="next" onclick="plusSlides(1)">❯</a>
-                    
-                    </div>
-                    <br>
-                    
-                    <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span> 
-                    <span class="dot" onclick="currentSlide(2)"></span> 
-                    <span class="dot" onclick="currentSlide(3)"></span> 
-                    <span class="dot" onclick="currentSlide(4)"></span> 
-                    </div>
-                    
-                    <script>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+
+                <script>
                     let slideIndex = 1;
                     showSlides(slideIndex);
-                    
+
                     function plusSlides(n) {
-                    showSlides(slideIndex += n);
+                        showSlides(slideIndex += n);
                     }
-                    
+
                     function currentSlide(n) {
-                    showSlides(slideIndex = n);
+                        showSlides(slideIndex = n);
                     }
-                    
+
                     function showSlides(n) {
-                    let i;
-                    let slides = document.getElementsByClassName("mySlides");
-                    let dots = document.getElementsByClassName("dot");
-                    if (n > slides.length) {slideIndex = 1}    
-                    if (n < 1) {slideIndex = slides.length}
-                    for (i = 0; i < slides.length; i++) {
-                        slides[i].style.display = "none";  
+                        let i;
+                        let slides = document.getElementsByClassName("mySlides");
+                        let dots = document.getElementsByClassName("dot");
+                        if (n > slides.length) { slideIndex = 1 }
+                        if (n < 1) { slideIndex = slides.length }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
                     }
-                    for (i = 0; i < dots.length; i++) {
-                        dots[i].className = dots[i].className.replace(" active", "");
-                    }
-                    slides[slideIndex-1].style.display = "block";  
-                    dots[slideIndex-1].className += " active";
-                    }
-                    </script>
-                    <div class="gameBox">
-                        <h4>A project I completed over Summer 2022. The goal was to create a fun and easy to use
-                            app that allows users to quiz themselves on their favorite artists' statistics that
-                            are within the Spotify free API endpoints. 
-                        </h4>
-                    </div>
+                </script>
+                <div class="gameBox">
+                    <h4>A project I completed over Summer 2022. The goal was to create a fun and easy to use
+                        app that allows users to quiz themselves on their favorite artists' statistics that
+                        are within the Spotify free API endpoints.
+                    </h4>
                 </div>
-            
+            </div>
+
         </section>
     </main>
 </body>
