@@ -82,34 +82,41 @@
                     <span class="dot" onclick="currentSlide(4)"></span>
                 </div>
 
+                <div class="gameBox">
+                    <h4>A project I completed over Summer 2022. I intended to create a fun and easy to use
+                        app that allows users to quiz themselves on their favorite artists' statistics that
+                        are within Spotify's free API endpoints. Coded in majority JavaScript, CSS, and HTML.
+                    </h4>
+                </div>
+
                 <h8>VU Housing Mobile App</h8>
                 <div class="slideshow-container">
-                    <div class="mySlides fade">
-                        <img src="images/Welcome Screen.png" style="width:100%">
+                    <div class="mySlides2 fade">
+                        <img src="images/Welcome Screen.png" style="height:30%">
                         <div class="numbertext">1 / 5</div>
                         <div class="text">Game mode landing page</div>
                     </div>
 
-                    <div class="mySlides fade">
-                        <img src="images/House Listing View.png" style="width:100%">
+                    <div class="mySlides2 fade">
+                        <img src="images/House Listing View.png" style="height:30%">
                         <div class="numbertext">2 / 5</div>
                         <div class="text">Popup of Hot Streak gamemode</div>
                     </div>
 
-                    <div class="mySlides fade">
-                        <img src="images/sign up filled.png" style="width:100%">
+                    <div class="mySlides2 fade">
+                        <img src="images/sign up filled.png" style="height:30%">
                         <div class="numbertext">3 / 5</div>
                         <div class="text">Multiple choice question</div>
                     </div>
 
-                    <div class="mySlides fade">
-                        <img src="images/Create listing.png" style="width:100%">
+                    <div class="mySlides2 fade">
+                        <img src="images/Create listing.png" style="height:30%">
                         <div class="numbertext">4 / 5</div>
                         <div class="text">Home landing page of app</div>
                     </div>
 
-                    <div class="mySlides fade">
-                        <img src="images/Find Listing page.png" style="width:100%">
+                    <div class="mySlides2 fade">
+                        <img src="images/Find Listing page.png" style="height:30%">
                         <div class="numbertext">5 / 5</div>
                         <div class="text">Home landing page of app</div>
                     </div>
@@ -122,10 +129,19 @@
                 <br>
 
                 <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide2(1)"></span>
+                    <span class="dot" onclick="currentSlide2(2)"></span>
+                    <span class="dot" onclick="currentSlide2(3)"></span>
+                    <span class="dot" onclick="currentSlide2(4)"></span>
+                    <span class="dot" onclick="currentSlide2(5)"></span>
+                </div>
+
+                <div class="gameBox">
+                    <h4>A project I completed in my software engineering class. I started an initiative to make searching for 
+                        off campus housing much simpler and more accessible for Villanova students. I worked with 3 other 
+                        developers to create this app prototype during the semester. We used the React Native framework to
+                        create app with TypeScript and Javascript composing most of app.
+                    </h4>
                 </div>
 
                 <script>
@@ -155,20 +171,34 @@
                         slides[slideIndex - 1].style.display = "block";
                         dots[slideIndex - 1].className += " active";
                     }
+
+                    let slideIndex2 = 1;
+                    showSlides(slideIndex2);
+
+                    function plusSlides2(n) {
+                        showSlides(slideIndex2 += n);
+                    }
+
+                    function currentSlide2(n) {
+                        showSlides2(slideIndex2 = n);
+                    }
+
+                    function showSlides2(n) {
+                        let i;
+                        let slides = document.getElementsByClassName("mySlides2");
+                        let dots = document.getElementsByClassName("dot");
+                        if (n > slides.length) { slideIndex2 = 1 }
+                        if (n < 1) { slideIndex2 = slides.length }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex2 - 1].className += " active";
+                    }
                 </script>
-                <div class="gameBox">
-                    <h4>A project I completed over Summer 2022. I intended to create a fun and easy to use
-                        app that allows users to quiz themselves on their favorite artists' statistics that
-                        are within Spotify's free API endpoints. Coded in majority JavaScript, CSS, and HTML.
-                    </h4>
-                </div>
-                <div class="gameBox">
-                    <h4>A project I completed in my software engineering class. I started an initiative to make searching for 
-                        off campus housing much simpler and more accessible for Villanova students. I worked with 3 other 
-                        developers to create this app prototype during the semester. We used the React Native framework to
-                        create app with TypeScript and Javascript composing most of app.
-                    </h4>
-                </div>
             </div>
 
         </section>
