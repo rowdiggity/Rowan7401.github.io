@@ -90,50 +90,50 @@
                 </div>
 
                 <h8>VU Housing Mobile App</h8>
-                <div class="slideshow-container">
+                <div class="slideshow-container2">
                     <div class="mySlides2 fade">
-                        <img src="images/Welcome Screen.png" style="height:30%">
+                        <img src="images/Welcome Screen.png" style="width:100%">
                         <div class="numbertext">1 / 5</div>
-                        <div class="text">Game mode landing page</div>
+                        <div class="text">Landing Page of App</div>
                     </div>
 
                     <div class="mySlides2 fade">
-                        <img src="images/House Listing View.png" style="height:30%">
+                        <img src="images/House Listing View.png" style="width:100%">
                         <div class="numbertext">2 / 5</div>
-                        <div class="text">Popup of Hot Streak gamemode</div>
+                        <div class="text">House Listing Info Screen</div>
                     </div>
 
                     <div class="mySlides2 fade">
-                        <img src="images/sign up filled.png" style="height:30%">
+                        <img src="images/sign up filled.png" style="width:100%">
                         <div class="numbertext">3 / 5</div>
-                        <div class="text">Multiple choice question</div>
+                        <div class="text">Sign Up Screen</div>
                     </div>
 
                     <div class="mySlides2 fade">
-                        <img src="images/Create listing.png" style="height:30%">
+                        <img src="images/Create listing.png" style="width:100%">
                         <div class="numbertext">4 / 5</div>
-                        <div class="text">Home landing page of app</div>
+                        <div class="text">Add a Listing Screen</div>
                     </div>
 
                     <div class="mySlides2 fade">
-                        <img src="images/Find Listing page.png" style="height:30%">
+                        <img src="images/Find Listing page.png" style="width:100%">
                         <div class="numbertext">5 / 5</div>
-                        <div class="text">Home landing page of app</div>
+                        <div class="text">Find a Listing Screen</div>
                     </div>
 
 
-                    <a class="prev" onclick="plusSlides(-1)">❮</a>
-                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    <a class="prev" onclick="plusSlides2(-1)">❮</a>
+                    <a class="next" onclick="plusSlides2(1)">❯</a>
 
                 </div>
                 <br>
 
                 <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide2(1)"></span>
-                    <span class="dot" onclick="currentSlide2(2)"></span>
-                    <span class="dot" onclick="currentSlide2(3)"></span>
-                    <span class="dot" onclick="currentSlide2(4)"></span>
-                    <span class="dot" onclick="currentSlide2(5)"></span>
+                    <span class="dot2" onclick="currentSlide2(1)"></span>
+                    <span class="dot2" onclick="currentSlide2(2)"></span>
+                    <span class="dot2" onclick="currentSlide2(3)"></span>
+                    <span class="dot2" onclick="currentSlide2(4)"></span>
+                    <span class="dot2" onclick="currentSlide2(5)"></span>
                 </div>
 
                 <div class="gameBox">
@@ -173,10 +173,10 @@
                     }
 
                     let slideIndex2 = 1;
-                    showSlides(slideIndex2);
+                    showSlides2(slideIndex2);
 
                     function plusSlides2(n) {
-                        showSlides(slideIndex2 += n);
+                        showSlides2(slideIndex2 += n);
                     }
 
                     function currentSlide2(n) {
@@ -186,7 +186,7 @@
                     function showSlides2(n) {
                         let i;
                         let slides = document.getElementsByClassName("mySlides2");
-                        let dots = document.getElementsByClassName("dot");
+                        let dots = document.getElementsByClassName("dot2");
                         if (n > slides.length) { slideIndex2 = 1 }
                         if (n < 1) { slideIndex2 = slides.length }
                         for (i = 0; i < slides.length; i++) {
@@ -195,7 +195,7 @@
                         for (i = 0; i < dots.length; i++) {
                             dots[i].className = dots[i].className.replace(" active", "");
                         }
-                        slides[slideIndex - 1].style.display = "block";
+                        slides[slideIndex2 - 1].style.display = "block";
                         dots[slideIndex2 - 1].className += " active";
                     }
                 </script>

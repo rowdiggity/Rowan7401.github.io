@@ -376,14 +376,23 @@ p{
   background-color: #65dfc9
 }
 
-* {box-sizing: border-box}
+
 
 .mySlides {display: none}
+.mySlides2 {display: none;}
 img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
   max-width: 90%;
+  position: relative;
+  margin: auto;
+  border: solid black;
+  border-width: 0.25rem;
+}
+
+.slideshow-container2 {
+  max-width: 30%;
   position: relative;
   margin: auto;
   border: solid black;
@@ -446,6 +455,16 @@ img {vertical-align: middle;}
 
 /* The dots/bullets/indicators */
 .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot2 {
   cursor: pointer;
   height: 15px;
   width: 15px;
